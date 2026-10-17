@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description"
+    content="Welcome, prospective Guardian! Our celestial scouts have detected a remarkable potential within you!" />
+  <title>Magical Girl Recruitment Application</title>
+  <meta property="og:title" content="Magical Girl Recruitment Application" />
+  <meta property="og:type" content="website" />
+</head>
+
+<body>
+  <p align="center">⊹₊˚‧ ︵‿₊⊱·✶·⊰₊‿︵ ‧˚₊⊹</p>
+  <h1 id="title" align="center">Magical Girl Recruitment Application</h1>
+  <p id="description">Welcome, prospective Guardian! Our celestial scouts have detected a remarkable potential within
+    you. Please
+    complete the following application to determine your magical compatibility and eligibility for official recruitment.
+  </p>
+  <p><em>Please answer honestly. The Association is not responsible for accidental transformations, sentient mascots, or
+      unexpected destiny-related incidents.</em></p>
+
+  <p align="center">₊˚ ✧ ━━━━━━━━━━━ ⊱⋆⊰ ━━━━━━━━━━━ ✧ ₊˚</p>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">What is your name?</label>
+      <input type="text" name="name" id="name" class="form-control" placeholder="Enter your civilian name" required />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">What is your email address?</label>
+      <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number">How old are you?<span class="clue"></span></label>
+      <input type="number" name="age" id="number" min="10" max="28" class="form-control" placeholder="Age" required />
+    </div>
+    <div class="form-group">
+      <p>Which magical discipline best represents your abilities?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select your magical discipline</option>
+        <option value="elemental">Elemental Magic</option>
+        <option value="healing">Healing Magic</option>
+        <option value="celestial_cosmic">Celestial and Cosmic Magic</option>
+        <option value="time_space">Time and Space Manipulation</option>
+        <option value="illusion_dream">Illusion and Dream Magic</option>
+        <option value="curses">Curses and Forbidden Arts</option>
+        <option value="undetermined">Still Awaiting Manifestation</option>
+      </select>
+    </div>
+
+
+    <div class="motivation">
+      <p>What is your primary motivation for becoming a magical girl?</p>
+
+      <label>
+        <input name="reason" value="m_protect" type="radio" class="input-radio" checked />
+        I want to protect the people I love.
+      </label><br>
+
+      <label>
+        <input name="reason" value="m_hope" type="radio" class="input-radio" />
+        To bring hope to those who have lost it.
+      </label><br>
+
+      <label>
+        <input name="reason" value="m_truth" type="radio" class="input-radio" />
+        I want to understand the strange powers awakening within me.
+      </label><br>
+
+      <label>
+        <input name="reason" value="m_special" type="radio" class="input-radio" />
+        A strange creature promised me that I was special.
+      </label><br>
+
+      <label>
+        <input name="reason" value="m_blind" type="radio" class="input-radio" />
+        I signed a contract without reading the fine print.
+      </label><br>
+    </div>
+
+
+    <div class="magical_item">
+      <p>
+        Choose your designated transformation item.
+      </p>
+      <select id="most-like" name="mostLike" class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="compact">Enchanted Compact</option>
+        <option value="pendant">Crystal Pendant</option>
+        <option value="wand">Celestial Wand</option>
+        <option value="ribbon">Magical Ribbon</option>
+        <option value="brooch">Star-Shaped Brooch</option>
+        <option value="unknown_artifact">Unknown Artifact</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>
+        Which responsibilities are you prepared to undertake?
+        <span class="responsibilities">(Select all that apply)</span>
+      </p>
+
+      <label><input name="responsibilities" value="protect" type="checkbox" class="input-checkbox" />Protecting innocent
+        civilians from supernatural threats.</label><br>
+      <label>
+        <input name="responsibilities" value="secret" type="checkbox" class="input-checkbox" />Keeping my magical
+        identity secret from friends and family</label><br>
+      <label>
+        <input name="responsibilities" value="guidance" type="checkbox" class="input-checkbox" />Accepting guidance from
+        my assigned familiar</label><br>
+      <label><input name="responsibilities" value="emergencies" type="checkbox" class="input-checkbox" />Responding to
+        emergencies at any hour</label><br>
+      <label><input name="responsibilities" value="fighting" type="checkbox" class="input-checkbox" />Fighting even when
+        the odds are unfavorable</label><br>
+      <label><input name="responsibilities" value="mission" type="checkbox" class="input-checkbox" />Placing the mission
+        above my personal comfort</label><br>
+      <label><input name="responsibilities" value="sacrifices" type="checkbox" class="input-checkbox" />Making
+        sacrifices necessary to preserve the balance</label><br>
+      <label><input name="responsibilities" value="serve" type="checkbox" class="input-checkbox" />Continuing to serve
+        even if my original reasons for joining no longer apply</label>
+    </div>
+
+    <br>
+
+    <div class="form-group">
+      <p>Is there anything else the Association should know before finalizing your application?</p>
+      <p><em>You may disclose unusual dreams, recurring visions, encounters with unidentified entities, or any concerns
+          regarding the terms of your recruitment.</em></p>
+      <textarea id="comments" class="input-textarea" name="comment"
+        placeholder="Share any secrets or concerns here..."></textarea>
+    </div>
+    <p align="center">₊˚ ✧ ━━━━━━⊱⋆⊰━━━━━━ ✧ ₊˚</p>
+    <p>Please remember that all successful applicants are subject to the terms of their magical contract. Once a soul
+      has been registered, withdrawal of the application <strong>may no longer be possible.</strong></p>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit!
+      </button>
+    </div>
+  </form>
+</body>
+
+</html>
